@@ -1,0 +1,2118 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Lato:wght@300&family=Playfair+Display:ital@0;1&family=Poppins&display=swap');
+.no-scroll {
+  overflow: hidden;
+  
+}
+
+@media screen and (max-width:1100px){
+.hero-image{
+  display:none
+}
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+b{
+  font-weight: 800;
+}
+body{
+  width: 100%;
+  background-color: #e4f4ff;
+  background-color: #fff ;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Edu SA Beginner', cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Playfair Display', serif;
+  
+  position: relative;
+  scrollbar-width: thin;
+  /* scrollbar-color: #4d7fff #ddd;  */
+}
+
+a{
+  text-decoration: none;
+  color: #2F358D
+}
+
+
+/* MAIN */
+
+/* NAVBAR STARTS HERE */
+.navbar{
+  width: 100%;
+  padding-top:0 10px;
+  box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  
+}
+.navbar nav{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  
+}
+.navbar nav .logo{
+  width:30%;
+  padding:0;
+  margin:0;
+}
+.navbar nav .logo img{
+  width:40%;
+  padding:0;
+  margin:0;
+  /* object-fit: contain; */
+}
+.navbar nav ul{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0;
+  margin:0;
+}
+
+.navbar nav ul li{
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+.bars{
+  display: none;
+}
+
+/* NAVBAR ENDS HERE */
+
+
+/* FOOTER STARTS HERE */
+.foot{
+  width: 100%;
+  background-color: #fff;
+  padding: 60px 0;
+}
+.foot footer{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot footer div{
+  width: 22%;
+}
+
+.foot img{
+  width: 100%;
+}
+
+.foot footer div h4{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 30px;
+  color: #2F358D;
+
+}
+.foot footer div li{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 15px;
+  list-style: circle;
+  color: #2F358D;
+
+}
+.foot footer .fas{
+  font-size: 18px;
+  margin-right: 7px;
+}
+
+.foot footer a{
+  color: #000;
+}
+
+/* FOOTER ENDS HERE */
+
+/* Slider */
+.slide{
+  /* height: 100px; */
+  display: flex;
+  align-items: start;
+  padding: 40px 0;
+}
+
+.slide img{
+  object-fit: contain;
+  /* background-color: #DEA729; */
+  width: 30%;
+  margin: auto;
+  
+}
+
+.slide .acc{
+  /* object-fit: cover; */
+  /* height: 40px; */
+  width: 30%;
+  
+}
+
+/* HOMEPAGE STARTS HERE */
+
+/* fade slider */
+.photo-container {
+  height: 60vh;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.photos {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  margin-right: 0;
+  -webkit-box-reflect: below 0.01px
+    linear-gradient(transparent, transparent, #0006);
+}
+.swiper-container {
+  height: 50vh;
+}
+
+.hero{
+  background-image: url(Images/hero.png);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+.emp{
+  text-align: center;
+  text-align: center;
+  
+}
+
+.emp button{
+  height: 35px;
+  padding:0 35px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #2F358D;
+
+}
+
+ 
+
+
+.emp h1{
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 80px;
+
+}
+.emp p{
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+
+}
+
+.emp p b{
+  font-weight: bolder;
+  font-size: 19px;
+}
+
+.emp .explore{
+  
+  margin-top: 30px;
+  border-radius: 12px;
+  background: #DEA729;
+  padding: 0 25px;
+
+}
+.emp h2{
+  margin-top: 60px;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  color: #2F358D;
+
+
+}
+
+.prog{
+  background: #DEA7291A;
+  margin-top: 30px;
+  padding: 50px 0;
+  text-align: center;
+}
+.prog p{
+  margin-top: 20px;
+}
+.prog h3{
+  color: #2D378E;
+}
+
+.prog .prog-cards{
+  width: 92%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.prog .prog-cards .prog-card{
+  width: 30%;
+  background-color: #fff;
+  padding: 30px 0;
+  border-radius: 20px;
+}
+
+.prog .prog-cards .prog-card img{
+  width: 85%;
+  margin: auto;
+}
+
+.prog .prog-cards .prog-card .prog-text{
+  padding-top: 30px;
+  width: 85%;
+  margin: auto;
+  text-align: start;
+}
+.prog .prog-cards .prog-card .prog-text h4{
+  font-size: 17px;
+  font-weight: 800;
+  color: #2F358D;
+}
+
+.prog .prog-cards .prog-card .prog-text p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #00000080;
+
+}
+
+.prog .prog-cards .prog-card .prog-text a{
+  color: hsla(234, 52%, 37%,.7);
+  text-decoration: underline;
+
+}
+
+.why{
+  padding: 80px 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.why h1{
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 25px;
+  color: #2D378E;
+}
+
+.why .why-flex{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.why .why-flex .left{
+  width: 42%;
+}
+
+.why .why-flex .left h3{
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+
+}
+
+.why .why-flex .left .list{
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.why .why-flex .left .list h6{
+  font-size: 26px;
+  font-weight: 400;
+
+}
+
+.why .why-flex .left .list p{
+  font-size: 17px;
+  font-weight: 400;
+  color: #00000080;
+
+}
+
+.why .why-flex .right{
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.why .why-flex .right .why-card{
+  width: 47%;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.why .why-flex .right .why-card img{
+  width: 40%;
+  margin: auto;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+
+.why .why-flex .right .why-card h5 {
+  color: #2D378E;
+}
+
+.where{
+  padding: 40px 0;
+  background-color: #fff;
+
+}
+
+.where h2{
+  font-size: 36px;
+  color: #2D378E;
+  text-align: center;
+}
+
+.learners{
+  padding: 70px 0;
+ background: #B2B0F71A;
+}
+
+.learners .learners-flex{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.learners .learners-flex .l-left{
+  width: 40%;
+}
+.learners .learners-flex .l-left h2{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.learners .learners-flex .l-right{
+  width: 40%;
+}
+/* .learners .learners-flex .l-right .one{
+  background-color: red;
+} */
+.learners .learners-flex .l-right .one div{
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+.learners .learners-flex .l-right .one div h4{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.learners .learners-flex .l-right .one div img{
+  width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.learners .learners-flex .l-right .one div h2{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.learners .learners-flex .l-right .one div p{
+  font-size: 18px;
+  font-weight: 400;
+  color: #DEA729;
+
+}
+.learners .learners-flex .l-right .one div a{
+  font-size: 17px;
+  font-weight: 400;
+  color: hsl(0, 0%, 0%,.7);
+
+}
+
+/* HOMEPAGE ENDS HERE */
+
+
+
+/* FAQ STARTS HERE */
+
+.faq-heading{
+  text-align: center;
+  margin-top: 50px;
+}
+.faq-heading h1{
+  font-size: 50px;
+  font-weight: 600;
+  color: #2F358D;
+  /* line-height: 60px; */
+}
+.faq-heading p{
+  width: 32%;
+  margin: auto;
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+
+}
+
+.questions{
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+  padding-bottom: 70px;
+}
+.questions div{
+  margin-top: 40px;
+}
+.questions h3{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: #2F358D;
+}
+
+.questions p{
+  width: 88%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000000B2;
+}
+/* FAQ ENDS HERE */
+
+
+
+/* DSP STARTS HERE */
+.enroll{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.enroll2{
+  margin-bottom: 20px;
+}
+
+.enroll div{
+  width: 45%;
+  /* padding: 100px 0; */
+}
+
+.enroll .txt{
+  position: relative;
+  /* padding-bottom:100px; */
+}
+
+.enroll div button{
+  padding: 5px 25px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  background: #2F358D;
+  margin-bottom: 40px;
+}
+
+.enroll div h2{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.enroll div p{
+  width: 75%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.enroll div .enrollment{
+  background: #DEA729;
+  margin: 0;
+  color: #fff;
+
+}
+
+.enroll div img{
+  width: 100%;
+  /* height: 60vh; */
+}
+
+.enroll .pops{
+  position: absolute;
+  background-color: #fff;
+  bottom: -100px;
+  left: 120px;
+  box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+  width: fit-content;
+  text-align: center;
+  padding: 0;
+  padding: 20px;
+}
+.pop{
+  background-color: #fff;
+  box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  padding: 20px;
+}
+
+ .pop  button{
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #DEA729;
+  color: #fff;
+  margin: 0;
+}
+
+
+
+@media screen and (max-width:710px){
+  .enroll .pops{
+    left: 0;
+    bottom: 0;
+  }
+  .memories .pops{
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.enroll .pops p{
+  width: 100%;
+  margin: 0;
+}
+
+.enroll .pops  button{
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #DEA729;
+  color: #fff;
+  margin: 0;
+}
+
+/* DSP ENDS HERE */
+
+/* COUNTDOWN STARTS HERE */
+  .count{
+    background: #DEA7291A;
+    padding: 30px 0;
+    text-align: center;
+
+  }
+
+  .count h3{
+    font-size: 36px;
+    font-weight: 500;
+    /* line-height: 54px; */
+    margin-bottom: 25px;
+    color: #2F358D;
+
+  }
+
+  .count p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .count .counting{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* justify-content: space-around; */
+  }
+
+  .count .counting .count-c{
+    width: 20%;   
+    margin: auto;
+  }
+
+  
+  
+
+  .count .counting .count-c div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    /* text-align: center; */
+    color: #2F358D;
+
+  }
+  .count .counting .count-c div h2{
+    font-size: 66px;
+    font-weight: 600;
+  
+
+  }
+  .count .counting .count-c div h3{
+    font-size: 66px;
+    font-weight: 600;
+    margin: 0;
+
+  }
+  .count .counting .count-c p{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: start;
+    color: #2F358D;
+    margin-left: 6px;
+
+  }
+  .count .counting .count-l{
+    width: 10%;   
+    
+  }
+
+
+/* COUNTDOWN ENDS HERE */
+
+
+/* ABOUT DSP STARTS HERE */
+
+.about-dsp{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.about-dsp .txt{
+  width: 52%;
+  text-align: center;
+}
+
+
+.about-dsp div h3{
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  text-align: left;
+  color: #2F358D;
+
+}
+
+.about-dsp div p{
+  width: 90%;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  justify-self: auto;
+}
+
+.about-dsp .img{
+  width: 38%;
+}
+.about-dsp div img{
+  width: 95%;
+  margin: auto;
+  height: 55vh;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width:710px){
+  .about-dsp div img{
+    height: 36vh;
+  }
+}
+
+
+/* ABOUT DSP ENDS HERE */
+
+
+
+/* COURSES OFFERED STARTS HERE */
+.courses{
+  width: 100%;
+  padding: 30px 0;
+}
+
+.courses h1{
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  margin-bottom: 30px;
+  color: #2F358D;
+}
+.courses section{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.courses section .course-card{
+  width: 33%;
+  margin-bottom: 0px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.courses section .course-card div{
+  width: 80%;
+  margin: auto;
+  background: #606B8B1A;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.courses section .course-card div img{
+  width: 85px;
+  height: 85px;
+  margin-bottom: 20px;
+}
+.courses section .course-card div h3{
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: #2F358D;
+}
+
+.courses section .course-card div p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+ 
+}
+
+.courses section .course-card div .open{
+  cursor: pointer;
+  color: #2F358D;
+  text-decoration: underline;
+}
+
+.learn-more{
+  position: absolute;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+  top: 0;
+  left: 0;
+  padding: 0 15px;
+  /* display: none; */
+}
+
+.learn-more h6{
+  width: 100%;
+  text-align: end;
+  cursor: pointer;
+  margin: 30px 40px 20px 0;
+  font-size: 24px;
+  color: #2F358D;
+
+}
+
+.moren{
+  display: none;
+}
+
+
+
+/* COURSES OFFERED ENDS HERE */
+
+
+/* MEMORIES STARTS HERE */
+
+.memories{
+  padding: 70px 0;
+  text-align: center;
+}
+
+.memories h1{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  margin-bottom: 40px;
+  color: #2F358D;
+
+}
+
+.memories .slide img{
+  object-fit: contain;
+  /* background-color: #DEA729; */
+  height: auto;
+  width: 40%;
+}
+
+.memories .enrollment{
+  margin-top: 60px;
+  padding: 10px 45px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  background: #DEA729;
+}
+
+.memories .gallery{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.memories .gallery img{
+  width: 30%;
+  margin-bottom: 30px;
+  height: 320px;
+}
+
+.memories .gallery p{
+  font-size: 20px;
+  color: #2F358D;
+  font-weight: 900;
+  width: 100%;
+  text-align: end;
+  cursor: pointer;
+}
+
+
+
+/* MEMORIES ENDS HERE */
+
+
+/* APPLICATION FORM STARTS HERE */
+.application{
+  display: flex;
+  
+}
+
+.application .form-text{
+  width: 45%;
+  background: #F1C7381A;
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  background-image: url(Images/hero-image.jpeg);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.application .form-text .logo{
+  width: 50%;
+  text-align: start;
+  z-index: 12;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+  
+}
+
+.application .form-text .logo img{
+  width: 77%;
+  object-fit: contain;
+  margin-bottom: 20px;
+  z-index: 13;
+  position: relative;
+}
+
+.application .form-text h2{
+  width: 88%;
+  margin: auto;
+  text-align: center;
+  font-size: 26px;
+  line-height: 40px;
+  /* height: 45%; */
+  color: #fff;
+  position: relative;
+  z-index: 20;
+  margin-top: 35%;
+  font-family: 'Edu SA Beginner', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 900;
+background-color: hsla(216, 54%, 11%,.4);
+padding: 10px;
+}
+
+
+
+.application .form-text .pix1{
+  position: absolute;
+  background-color: hsla(0, 0%, 0%, .3);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+}
+.application .form-text .pix1 img{
+  width: 70%;
+  /* height: 100%; */
+  height: 55vh;
+  margin-top: 10px;
+}
+
+.application .formHolder{
+  background-color: #fff;
+  width: 55%;
+  padding: 70px 30px 0 30px;
+  text-align: center;
+}
+
+.application .formHolder h4{
+  font-size: 24px;
+  font-weight: 600;
+  /* line-height: 36px; */
+  margin-bottom: 15px;
+  text-align: left;
+
+}
+
+.application .formHolder p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000B2;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.application .formHolder .form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.application .formHolder .form label{
+  width: 45%;
+  margin-bottom: 15px;
+}
+.application .formHolder .form label p{
+  margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+}
+
+.application .formHolder .form label input{
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #0000004D;
+  padding-left: 10px;
+}
+
+input[type="date"] {
+  padding: 5px;
+  font-size: 13px;
+  color: #5e5e5e;
+  border-radius: 4px;
+}
+
+
+.application .formHolder .form label input::placeholder{
+  font-size: 12px;
+}
+
+.application .formHolder .form label select{
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #0000004D;
+  padding-left: 10px;
+  font-size: 13px;
+  color: #5e5e5e;
+}
+
+
+
+.application .submit{
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.application .submit button{
+  width: 100%;
+  padding: 5px 25px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  background: #DEA729;
+}
+
+/* APPLICATION FORM ENDS HERE */
+
+
+
+/* APPLICATION MODAL */
+.two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.confirm{
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.confirm h3{
+  font-size: 25px;
+  color: red;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+.confirm h4{
+  font-size: 19px;
+  color: #2F358D;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.confirm p{
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #2D378E;
+}
+.confirm ol{
+  text-align: start;
+}
+.confirm ol li{
+  font-size: 18px;
+  margin-bottom: 10px;
+  list-style: numeric;
+}
+.confirm button{
+  margin-top: 30px;
+  padding: 5px 25px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  background: #DEA729;
+}
+
+
+
+/* CONGRAT STARTS HERE */
+.congrat{
+  background-color: #fff;
+  margin-top: 40px;
+  text-align: center;
+  
+}
+.congrat h3{
+  width: 65%;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+}
+
+.congrat img{
+  width: 40%;
+  object-fit: contain;
+  margin: 0;
+}
+
+.congrat p{
+  width: 60%;
+  margin: auto;
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.congrat button{
+  padding: 5px 25px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 50px;
+  background: #DEA729;
+}
+
+/* CONGRATS END HERE */
+
+
+/* CONTACT STARTS HERE */
+.contact{
+  width: 100%;
+  padding: 70px 0;
+}
+.contact h1{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #2F358D;
+}
+.contact .contact-form{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .contact-form .inputs{
+  width: 45%;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.contact .contact-form .inputs label{
+  width: 90%;
+}
+
+.contact .contact-form .inputs input {
+  width: 100%;
+  border: 1px solid #5e5e5e;
+  padding-left: 10px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+
+.contact .contact-form .inputs textarea {
+  width: 100%;
+  border: 1px solid #5e5e5e;
+  padding-left: 10px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.contact .contact-form .inputs .sub{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #DEA729;
+  outline: none;
+  border: none;
+  width: 90%;
+}
+
+.contact .contact-form .info{
+  width: 45%;
+  background-color: #fff;
+  box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+  padding: 20px 0;
+}
+.contact .contact-form .info div{
+  width: 80%;
+  margin: auto;
+  
+}
+.contact .contact-form .info div h1{
+  text-align: start;
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #000;
+  margin-top: 15px;
+  color: #2F358D;
+
+}
+
+.contact .contact-form .info div p{
+  width: 100%;
+  margin-bottom: 20px;
+  color: #000;
+}
+.contact .contact-form .info div a{
+  color: #000;
+  width: 100%;
+}
+
+.contact .contact-form .info .link p{
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+
+/* HOW IT WORKS */
+.how{
+  background-color: #fff;
+  padding: 60px 0 0 0;
+  box-shadow: 0 10px 25px rgba(23,29,36,.1);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.how h2{
+  font-weight: 800;
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: #2F358D;
+}
+.how .one{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  
+  padding: 40px 0;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  
+}
+.how .one div{
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
+  padding: 40px 20px;
+  height: 370px;
+  margin-left: 10px;
+  box-shadow: 0 10px 25px rgba(23,29,36,.1);
+
+}
+
+.how .one p{
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background-color: #2F358D;
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+.how .one h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  color: #2F358D;
+}
+
+.how .one h4{
+  font-size: 17px;
+  padding: 0 30px;
+  color: #5e5e5e;
+}
+
+
+/* STATUS */
+.status{
+  height: 100vh;
+  background: linear-gradient(57deg,#fbf6e9,#4c516d 70.71%);
+}
+
+.status header{
+  width: 100%;
+  padding-top: 20px;
+}
+
+.status header nav{
+  width: 90%;
+  margin: auto;
+}
+.status header nav img{
+  width: 120px;
+}
+
+.status section{
+  width: 90%;
+  margin: auto;
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status section div{
+  width: 44%;
+  text-align: center;
+}
+
+.status section div h2{
+  color: rgb(22, 49, 64);
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.status section div h2 span{
+  color: #f8cc11;
+}
+.status section div p{
+  color: #fff;
+  font-size: 18px;
+}
+
+.status section .form-c{
+  background-color: rgb(22, 49, 64);
+  padding: 25px 0;
+  width: 50%;
+}
+
+.status section .form-c .status-form{
+  width: 90%;
+  margin: auto;
+}
+
+.status section .form-c .status-form input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  height: 43px;
+  border-radius: 10px;
+  outline: none;
+}
+.status section .form-c .status-form button{
+  width: 100%;
+  padding-left: 5px;
+  height: 43px;
+  border-radius: 10px;
+  border: none;
+  background-color:  #f8cc11;
+}
+
+
+
+
+/* CONTACT ENDS HERE */
+
+
+@media screen and (max-width:1100px){
+
+  /* How it works */
+
+.how .one div{
+  height: 400px;
+  padding: 30px 0;
+ 
+ }
+
+}
+
+.confirms{
+  width: 60%;
+}
+
+.confirms h4{
+ font-weight: 400;
+ text-align: left;
+}
+
+.confirms h3{
+  font-size: 18px;
+  text-align: left;
+ }
+
+/* MEDIA QUERY */
+@media screen and (max-width:900px){
+
+  .confirms{
+    width: 90%;
+  }
+
+  .confirms h3{
+    font-size: 15px;
+  }
+  .confirms h4{
+    font-size: 17px;
+  }
+  .hero{
+    height: 65vh;
+  }
+  a{
+    color: #fff;
+  }
+  .navbar nav ul li{
+    color: #fff;
+  }
+  .bars{
+    display: block;
+    font-size: 18px;
+  }
+  
+  .navbar nav ul{
+    position: fixed;
+    flex-direction: column;
+    background-color: #0D192B;
+    width: 100%;
+    top: 10vh;
+    justify-content: start;
+    height: 100vh;
+    z-index: 50;
+    left:0;
+    /* left: -100%; */
+    transition: 0.3s ;
+    height: 90vh;
+    gap:20px;
+    padding: 20px 0;
+    /* display: none; */
+  }
+  .navbar nav .menu{
+    left: -100%;
+  }
+  .navbar nav .active{
+    left: 0;
+  }
+
+  #close{
+    font-size: 26px;
+    font-weight: 800;
+  }
+
+  .cover{
+    width: 100%;
+    top: 10vh;
+    position: fixed;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, .9);
+    z-index: 5;
+    
+  }
+  .cover.active{
+    display: none;
+  }
+
+  .navbar nav .logo img{
+    width:100%;
+  }
+
+  /* Slider */
+.slide{
+  padding: 10px 0;
+}
+
+.slide img{
+  width: 40%;
+  height: 60px;
+}
+
+.slide .acc{
+  width: 40%;
+  
+}
+
+
+/* FOOTER STARTS HERE */
+.foot{
+  padding: 40px 0;
+}
+.foot footer{
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.foot footer div{
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.foot img{
+  width: 60%;
+  margin-left: 15px;
+}
+
+.foot footer div h4{
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.foot footer div li{
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+
+/* FOOTER ENDS HERE */
+
+
+  /* HOMEPAGE STARTS HERE */
+
+.emp{
+  margin-top: 30px;
+}
+
+.emp button{
+  font-size: 14px;
+}
+
+.emp h1{
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.emp p{
+  width: 90%;
+  margin: auto;
+  font-size: 16px;
+  line-height: 25px;
+
+}
+
+.emp h2{
+  font-size: 26px;
+  margin-top: 30px;
+  color: #2F358D;
+}
+.prog{
+  padding: 30px 8px;
+}
+
+.prog p{
+  font-size: 15px;
+}
+
+.prog .prog-cards{
+  flex-wrap: wrap;
+  
+}
+
+.prog .prog-cards .prog-card{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.prog .prog-cards .prog-card .prog-text h4{
+  font-size: 16px;
+}
+
+.prog .prog-cards .prog-card .prog-text p{
+  font-size: 13px;
+}
+
+.why{
+  padding: 30px 0;
+}
+
+.why h1{
+  font-size: 34px;
+  font-weight: 900;
+}
+.why .why-flex{
+  flex-direction: column;
+}
+
+.why .why-flex .left{
+  width: 90%;
+  margin-bottom: 20px;
+}
+.why .why-flex .left h3{
+  font-size: 24px;
+  line-height: 40px;
+}
+
+
+.why .why-flex .left .list h6{
+  font-size: 22px;
+  
+
+}
+
+.why .why-flex .left .list p{
+  font-size: 15px;
+  color: #5e5e5e;
+}
+
+.why .why-flex .right{
+  width: 95%;
+  flex-wrap: wrap;
+}
+
+.why .why-flex .right .why-card{
+  width: 100%;
+  padding: 30px 15px;
+}
+.why .why-flex .right .why-card h5{
+  font-weight: bolder;
+  font-size: 23px;
+}
+.why .why-flex .right .why-card img {
+  height: 110px;
+  width: 40%;
+}
+
+
+.where{
+  padding: 20px 0;
+
+}
+.where h2{
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.learners .learners-flex{
+  flex-direction: column;
+}
+
+.learners .learners-flex .l-left{
+  width: 90%;
+  margin-bottom: 20px;
+}
+.learners .learners-flex .l-left h2{
+  font-size: 20px;
+}
+
+
+.learners .learners-flex .l-right{
+  width: 90%;
+  margin: auto;
+}
+
+
+/* FAQ STARTS HERE */
+
+.faq-heading{
+  margin-top: 25px;
+}
+.faq-heading h1{
+  font-size: 28px;
+}
+.faq-heading p{
+  width: 82%;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.questions{
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.questions h3{
+  font-size: 18px;
+}
+
+.questions p{
+  width: 95%;
+  font-size: 16px;
+}
+
+/* DSP STARTS HERE */
+.enroll{
+  flex-direction: column-reverse;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.enroll div{
+  width: 95%;
+  margin: auto;
+  padding: 30px 0;
+}
+.enroll div button{
+  font-size: 13px;
+}
+.enroll div h2{
+  font-size: 26px;
+  margin-bottom: 13px;
+  line-height: 40px;
+}
+
+.enroll div p{
+  width: 95%;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.enroll div img{
+  width: 100%;
+}
+
+/* COUNTDOWN STARTS HERE */
+
+.count h3{
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.count p{
+  width: 80%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.count .counting{
+  width: 95%;
+
+}
+.count .counting .count-c{
+  width: 25%;   
+}
+.count .counting .count-l{
+  width: 25%;   
+}
+
+.count .counting .count-c div{
+ margin: auto;
+}
+
+.count .counting .count-c div h2{
+  font-size: 26px;
+
+
+}
+.count .counting .count-c div h3{
+  font-size: 26px;
+
+}
+.count .counting .count-c p{
+  font-size: 17px;
+  line-height: 48px;
+  text-align: center;
+}
+
+/* ABOUT DSP STARTS HERE */
+
+.about-dsp{
+  padding: 50px 0;
+  flex-direction: column-reverse;
+}
+
+.about-dsp .txt{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-dsp div h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-dsp div p{
+  width: 95%;
+  font-size: 15px;
+}
+
+.about-dsp .img{
+  width: 100%;
+}
+
+/* COURSES OFFERED STARTS HERE */
+.courses{
+  padding: 20px 0;
+}
+.courses h1{
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+.courses section .course-card{
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.courses section .course-card div{
+  width: 100%;
+}
+
+.courses section .course-card div h3{
+  font-size: 18px;
+  margin-bottom: 12px;
+
+}
+
+.courses section .course-card div p{
+  font-size: 14px;
+}
+
+
+
+/* MEMORIES STARTS HERE */
+
+.memories{
+  padding: 30px 0;
+}
+
+.memories h1{
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 20px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.memories .slide img{
+  width: 40%;
+ 
+}
+.memories .gallery img{
+  width: 48%;
+  height: 270px;
+  
+}
+/* APPLICATION FORM STARTS HERE */
+.application{
+  flex-direction: column;
+}
+.application .form-text{
+  width: 100%;
+  height: 80vh;
+}
+.application .form-text h2{
+  font-size: 20px;
+  line-height: 30px;
+}
+.application .form-text .pix1 img{
+  margin-top: 10px;
+}
+
+
+.application .formHolder{
+  width: 100%;
+  padding: 50px 20px 30px 20px;
+}
+.application form h4{
+  font-size: 20px
+
+}
+
+
+.application .formHolder .form label p{
+  font-size: 14px;
+}
+
+
+/* APPLICATION MODAL */
+
+.confirm h1{
+  font-size: 22px;
+}
+.confirm button{
+  margin-top: 10px;
+}
+
+
+/* CONGRAT STARTS HERE */
+.congrat{
+  margin-top: 20px;
+}
+
+.congrat h3{
+  width: 85%;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.congrat img{
+  width: 70%;
+ 
+}
+
+.congrat p{
+  width: 80%;
+  font-size: 15px;
+}
+
+.congrat button{
+  margin-bottom: 30px;
+}
+
+
+/* CONTACT STARTS HERE */
+.contact{
+  padding: 40px 0;
+}
+.contact h1{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.contact .contact-form{
+  flex-direction: column;
+}
+
+.contact .contact-form .inputs{
+  width: 100%;
+  margin-bottom: 40px;
+}
+.contact .contact-form .inputs input {
+  margin-bottom: 20px;
+}
+.contact .contact-form .inputs textarea {
+  margin-bottom: 20px;
+}
+.contact .contact-form .info{
+  width: 100%;
+}
+.contact .contact-form .info div{
+  width: 90%;
+  
+}
+.contact .contact-form .info div h1{
+  font-size: 25px;
+}
+.contact .contact-form .info div p{
+  font-size: 15px;
+}
+
+/* How it works */
+
+.how .one div{
+  height: 360px;
+  padding: 30px 0;
+ 
+ }
+ .learn-more{
+  width: 100%;
+}
+
+
+
+}
+
+@media screen and (max-width:710px){
+
+  /* How it works */
+
+ 
+
+.how .one div{
+  height: auto;
+  padding: 30px 0;
+ 
+ }
+
+ .memories .gallery img{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  
+}
+
+.learn-more{
+  width: 100%;
+}
+.status section{
+  flex-direction: column;
+  justify-content: center;
+}
+.status section div{
+  width: 100%;
+}
+
+.status section .form-c{
+  width: 100%;
+}
+
+
+
+}
+
+
+@media screen and (max-width:310px){
+  .emp button {
+   height: auto;
+   padding:5px 15px;
+  }
+  .foot footer {
+    justify-content: space-around;
+}
+.foot footer div{
+  width: 45%;
+}
+  .foot footer div li{
+   font-size: 13px;
+ 
+ }
+ .foot footer div ul{
+  padding-left:15px;
+ }
+ 
+ .application .formHolder .form label{
+  width:100%;
+ }
+ .application .formHolder h4{
+  font-size: 20px;
+ }
+ .why h1{
+  font-size:28px;
+ }
+ }
+
