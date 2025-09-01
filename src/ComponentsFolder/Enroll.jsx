@@ -44,9 +44,9 @@ const Enroll = (props) => {
                 <p>{props.para}</p>
 
                 {props.type === "dsp100" ? <>
-                 {/*<Link to={props.noLink} >*/}
-                  <button type="button" className='enrollment' onClick={handlePop}>{props.btn}</button>
-                   {/*</Link>*/}
+                 <Link to={props.noLink} >
+                  <button type="button" className='enrollment'>{props.btn}</button>
+                   </Link>
                 </>
                 :
                 <>
