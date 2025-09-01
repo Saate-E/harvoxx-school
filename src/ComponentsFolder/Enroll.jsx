@@ -45,7 +45,7 @@ const Enroll = (props) => {
 
                 {props.type === "dsp100" ? <>
                  <Link to={props.noLink} >
-                  <button type="button" className='enrollment'>{props.btn}</button>
+                  <button type="button" className='enrollment' onClick={handlePop}>{props.btn}</button>
                    </Link>
                 </>
                 :
@@ -54,17 +54,17 @@ const Enroll = (props) => {
                 // to={props.reg}
                  >
                   </Link>
-                  {/* <button type="button" className='enrollment'  onClick={openModal}>{props.btn}</button> */}
+                  <button type="button" className='enrollment'  onClick={openModal}>{props.btn}</button>
 
                   
-                    <Link to='/form' style={{color:'#fff'}}> 
+                    {/* <Link to='/form' style={{color:'#fff'}}> 
                       <button type='button' className='enrollment' 
-                      // onClick={toggleModal} 
+                      onClick={toggleModal} 
                       >
                         Enroll for Cohort 4
                       </button>
                       
-                      </Link> 
+                      </Link>  */}
                       
                 </>
                 }
@@ -142,7 +142,7 @@ const Enroll = (props) => {
 
 
         <div className="confirm">
-          <h4>DSP-300 Cohort 4 Registration Commences November 2024.</h4>
+          <h4>DSP-300  Registration is yet to commence.</h4>
           {/* <h4>Check back next year.</h4> */}
           
           <button type="button" onClick={openModal2}>
