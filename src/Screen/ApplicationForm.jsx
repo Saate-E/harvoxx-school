@@ -125,7 +125,7 @@ const ApplicationForm = () => {
       </div>
 
       <div className="formHolder">
-        <h4>Application for DSP-300</h4>
+        <h4>Application for DSP-100</h4>
         <p>Fill in your Details</p>
         <form onSubmit={handleSubmit} className="form">
           <label>
@@ -209,7 +209,7 @@ const ApplicationForm = () => {
               
               <option value="">Select Course</option>
               <option value="Product Design">Product Design</option>
-              <option value="Cybersecurity">Cybersecurity</option>
+              <option value="Product Management">Product Management</option>
               <option value="Data Analytics">Data Analytics</option>
               <option value="Frontend Development">Web Development(Frontend)</option>
               <option value="Digital Marketing">Digital Marketing</option>
