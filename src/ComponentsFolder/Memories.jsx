@@ -180,17 +180,17 @@ const Memories = (props) => {
 
 
         {props.type === "dsp100" ? <>
-                {/* <Link to={props.noLink} > */}
-                  <button type="button" className='enrollment enroll2' onClick={handlePop}>Enroll for Cohort-4</button>
-                  {/* </Link> */}
+                <Link to={props.noLink} >
+                  <button type="button" className='enrollment enroll2' onClick={handlePop}>Enroll</button>
+                  </Link>
                 </>
                 :
                 <>
-                <Link 
+                {/* <Link 
                 to='/form'
-                 >
-                  <button type="button" className='enrollment enroll2' >Enroll For Cohort-4</button>
-                  </Link>
+                 > */}
+                  <button type="button" className='enrollment enroll2' onClick={openModal} >Enroll</button>
+                  {/* </Link> */}
                   
                 </>
                 }
@@ -250,7 +250,7 @@ const Memories = (props) => {
 
 
           <div className="confirm">
-          <h4>DSP-300 Cohort 4 Registration Commences November 2024.</h4>
+          <h4>DSP-300 Registration is yet to commence.</h4>
           {/* <h4>Check back next year</h4> */}
           
           <button type="button" onClick={openModal2}>
