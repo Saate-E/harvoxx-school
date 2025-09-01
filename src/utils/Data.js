@@ -31,7 +31,7 @@ import prof27 from '../Images/melly.JPG'
 import prof31 from '../Images/sharon1.jpeg'
 
 import prof28 from '../Images/IMG_3234 - Precious Archibong.jpeg'
-import prof29 from '../Images/con.png'
+// import prof29 from '../Images/con.png'
 import prof30 from '../Images/gold.jpeg'
 import prof32 from '../Images/boma.jpeg'
 import prof33 from '../Images/imo.jpeg'
@@ -273,14 +273,14 @@ export const MultiCards= [
     title:'Product Designer',
     phone: '09020284372'
   },
-  {
-    id:30,
-    image: prof29,
-    text:"My has been nothing short of transformation. I now navigate my field as a digital marketer with confidence. Presently, I work at Brimars consulting Limited as a Digital Marketer intern.",
-    name:'Confidence Tamunoiprinye Hart',
-    title:'Digital Marketer',
-    phone: '09153117469'
-  },
+  // {
+  //   id:30,
+  //   image: prof29,
+  //   text:"My has been nothing short of transformation. I now navigate my field as a digital marketer with confidence. Presently, I work at Brimars consulting Limited as a Digital Marketer intern.",
+  //   name:'Confidence Tamunoiprinye Hart',
+  //   title:'Digital Marketer',
+  //   phone: '09153117469'
+  // },
   {
     id:32,
     image: prof30,
