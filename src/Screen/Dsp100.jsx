@@ -28,7 +28,7 @@ const Dsp100 = () => {
       type="dsp100"
         reg="/dsp100"
         btnClassName="hidden"
-        btn="Enroll for cohort 4"
+        btn="Enroll"
         title="Digital SkillUp Project-100 (DSP-100)"
         subtitle="Building The Next Generation Of Female Techies"
         para="Join millions of other ladies around the world breaking biases with their Tech Skills"
@@ -37,7 +37,7 @@ const Dsp100 = () => {
         cohort="100"
         message=" Your key to unlocking endless opportunities through digital skill pathways."
         start="DSP-100 training starts in"
-      /> 
+      />
       <AboutDsp
         type='dsp100'
         cohort="100"
