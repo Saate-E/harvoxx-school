@@ -30,7 +30,7 @@ const Dsp300 = () => {
   return (
     <div>
       <Navbar/>
-      <Enroll class='enroll enroll2'  reg='/status' btn='Check Status' title='Digital SkillUp Project-300 (DSP-300)' subtitle='Be A Part Of The Next Tech Force' src='shine-young-people-discussing-work-issues-1 1.png' para='Your passcode to unlocking endless horizons through digital skills.'/>
+      <Enroll class='enroll enroll2'  reg='/status' btn='Enroll' title='Digital SkillUp Project-300 (DSP-300)' subtitle='Be A Part Of The Next Tech Force' src='shine-young-people-discussing-work-issues-1 1.png' para='Your passcode to unlocking endless horizons through digital skills.'/>
       {/* <CountDown cohort='300' message='If you are willing, and can be dedicated then we can help you kick start your tech career.'  start='DSP-300 training starts in'/> */}
       <AboutDsp cohort='300' info='It is a pioneering initiative under the stewardship of Harvoxx Tech Hub, dedicated to empowering the youth of Rivers State, Nigeria, through comprehensive technology training. It represents a resolute commitment to bridging the digital divide, fostering innovation, and equipping the next generation with the skills needed to thrive in an ever-evolving technological landscape.
 
