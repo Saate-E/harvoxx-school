@@ -33,11 +33,11 @@ const Dsp100 = () => {
         subtitle="Building The Next Generation Of Female Techies"
         para="Join millions of other ladies around the world breaking biases with their Tech Skills"
       />
-      {/* <CountDowndsp100
+      <CountDowndsp100
         cohort="100"
         message=" Your key to unlocking endless opportunities through digital skill pathways."
         start="DSP-100 training starts in"
-      /> */}
+      /> 
       <AboutDsp
         type='dsp100'
         cohort="100"
