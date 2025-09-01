@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const CountDowndsp100 = (props) => {
     const calculateTimeLeft = () => {
-        const difference = +new Date("2024-07-01") - +new Date();
+        const difference = +new Date("2025-09-30") - +new Date();
         
         let timeLeft = {};
     
