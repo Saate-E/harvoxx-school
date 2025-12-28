@@ -1,14 +1,3 @@
-// {
-//     "version": 2,
-//     "name": "music-album",
-//     "builds": [
-//        { "src": "src/app.js", "use": "@vercel/node" }
-//     ],
-//     "routes": [
-//        { "src": "/(.*)", "dest": "/src/app.js" }
-//     ]
-//  }
-
 {
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
