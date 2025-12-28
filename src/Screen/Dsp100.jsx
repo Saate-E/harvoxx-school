@@ -1,10 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  useLocation,
-} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Enroll from "../ComponentsFolder/Enroll";
 // import CountDown from '../ComponentsFolder/CountDown';
 import AboutDsp from "../ComponentsFolder/AboutDsp";
