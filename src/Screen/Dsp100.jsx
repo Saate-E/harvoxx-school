@@ -12,7 +12,6 @@ import CoursesOffered from "../ComponentsFolder/CoursesOffered";
 import Memories from "../ComponentsFolder/Memories";
 import Footer from "../ComponentsFolder/Footer";
 import Navbar from "../ComponentsFolder/Navbar";
-import CountDowndsp100 from "../ComponentsFolder/CountDowndsp100";
 import Faq100 from "../ComponentsFolder/Faq100";
 import Contact from "../ComponentsFolder/Contact";
 
