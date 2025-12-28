@@ -63,36 +63,36 @@ const ApplicationForm = () => {
     e.preventDefault();
     const errors = validate(formData);
     setFormErrors(errors);
-  
+
     if (Object.keys(errors).length === 0) {
       setLoading(true); // Start loading
       try {
         // Check if email already exists
-        const { data: existingEmail } = await Supabase
-          .from("dsp300")
+        const { data: existingEmail } = await Supabase.from("dsp300-c4")
           .select("email")
           .eq("email", formData.email);
-  
+
         if (existingEmail.length > 0) {
           setFormErrors({ email: "This email is already registered." });
           return;
         }
-  
+
         // Check if recommendation code is already used
         if (inputValue.trim() !== "") {
-          const { data: existingCode } = await Supabase
-            .from("dsp300")
+          const { data: existingCode } = await Supabase.from("dsp300-c4")
             .select("code")
             .eq("code", inputValue);
-  
+
           if (existingCode.length > 0) {
-            setFormErrors({ code: `The code "${inputValue}" has already been used.` });
+            setFormErrors({
+              code: `The code "${inputValue}" has already been used.`,
+            });
             return;
           }
         }
-  
+
         // Proceed to submit if validations pass
-        await Supabase.from("dsp300").upsert([
+        await Supabase.from("dsp300-c4").upsert([
           {
             name: formData.fullname,
             email: formData.email,
@@ -108,14 +108,14 @@ const ApplicationForm = () => {
       }
     }
   };
-  
-  
 
   return (
     <div className="application">
       <div className="form-text">
         <div className="logo">
-          <Link to='/'><img src={logo} alt="Logo" /></Link>
+          <Link to="/">
+            <img src={logo} alt="Logo" />
+          </Link>
         </div>
         <h2>
           "Embrace the power of learning tech skills; for with each new skill
@@ -125,7 +125,7 @@ const ApplicationForm = () => {
       </div>
 
       <div className="formHolder">
-        <h4>Application for DSP-100</h4>
+        <h4>Application for DSP-300 C4</h4>
         <p>Fill in your Details</p>
         <form onSubmit={handleSubmit} className="form">
           <label>
@@ -206,12 +206,13 @@ const ApplicationForm = () => {
                 setFormData({ ...formData, course: e.target.value })
               }
             >
-              
               <option value="">Select Course</option>
               <option value="Product Design">Product Design</option>
-              <option value="Product Management">Product Management</option>
+              <option value="Product Management">Cyber Security</option>
               <option value="Data Analytics">Data Analytics</option>
-              <option value="Frontend Development">Web Development(Frontend)</option>
+              <option value="Frontend Development">
+                Web Development(Frontend)
+              </option>
               <option value="Digital Marketing">Digital Marketing</option>
             </select>
             <p style={{ color: "red" }}>{formErrors.course}</p>

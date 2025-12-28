@@ -1,12 +1,10 @@
-import React, {useState} from 'react';
-import enroll1 from '../Images/f12.jpeg';
-import enroll2 from '../Images/m26.jpeg'
-import {useNavigate, Link } from 'react-router-dom';
+import React, { useState } from "react";
+import enroll1 from "../Images/f12.jpeg";
+import enroll2 from "../Images/m26.jpeg";
+import { useNavigate, Link } from "react-router-dom";
 import Modal from "react-modal";
 
-
 const Enroll = (props) => {
-
   const [isOpen, setIsOpen] = useState(false);
   const toggleModal = () => {
     setIsOpen(!isOpen);
@@ -14,21 +12,21 @@ const Enroll = (props) => {
 
   const [pop, setPop] = useState(false);
 
-  const handlePop = () =>{
-    setPop(true)
-  }
+  const handlePop = () => {
+    setPop(true);
+  };
 
-  const handleClose = () =>{
-    setPop(false)
-  }
+  const handleClose = () => {
+    setPop(false);
+  };
 
-  const openModal = () =>{
+  const openModal = () => {
     setIsOpen(true);
-  }
+  };
 
-  const openModal2 = () =>{
+  const openModal2 = () => {
     setIsOpen(false);
-  }
+  };
 
   const navigate = useNavigate();
   const apply = () => {
@@ -37,27 +35,42 @@ const Enroll = (props) => {
 
   return (
     <div>
-        <section className={props.class} >
-            <div className='txt'>
-                <button type="button">{props.title}</button>
-                <h2>{props.subtitle}</h2>
-                <p>{props.para}</p>
+      <section className={props.class}>
+        <div className="txt">
+          <button type="button">{props.title}</button>
+          <h2>{props.subtitle}</h2>
+          <p>{props.para}</p>
 
-                {props.type === "dsp100" ? <>
-                 <Link to={props.noLink} >
-                  <button type="button" className='enrollment' onClick={handlePop}>{props.btn}</button>
-                   </Link>
-                </>
-                :
-                <>
-                <Link 
-                // to={props.reg}
-                 >
-                  </Link>
-                  <button type="button" className='enrollment'  onClick={openModal}>{props.btn}</button>
+          {props.type === "dsp300" ? (
+            <>
+              <Link to={props.noLink}>
+                <button
+                  type="button"
+                  className="enrollment enroll2"
+                  onClick={() => {
+                    if (props.type === "dsp300") {
+                      navigate(props.noLink || "/form"); // ✅ direct navigation
+                    } else if (props.type === "dsp100") {
+                      setPop(true); // ✅ show popup
+                    } else {
+                      openModal(); // ✅ open modal
+                    }
+                  }}
+                >
+                  {props.btn}
+                </button>
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link
+              // to={props.reg}
+              ></Link>
+              <button type="button" className="enrollment" onClick={openModal}>
+                {props.btn}
+              </button>
 
-                  
-                    {/* <Link to='/form' style={{color:'#fff'}}> 
+              {/* <Link to='/form' style={{color:'#fff'}}> 
                       <button type='button' className='enrollment' 
                       onClick={toggleModal} 
                       >
@@ -65,41 +78,33 @@ const Enroll = (props) => {
                       </button>
                       
                       </Link>  */}
-                      
-                </>
-                }
+            </>
+          )}
 
+          {props.type === "dsp300" ? (
+            <>
+              <div className={pop ? "pops" : "moren"}>
+                <p>Registration for cohort 4 is yet to commence.</p>
 
-                
-                  {props.type === "dsp100" ? <>
-                    <div className={pop ?  'pops' : 'moren'}>
-                      
-                        <p>Registration for cohort 4 is yet to commence.</p>
-                        
-                        <button onClick={handleClose}>OK</button>
-        
-                      
-                    </div>
-              
-              </> :
-              null
-              }
-                
-
-            </div>
-            <div>
-              {props.type === "dsp100" ? <>
+                <button onClick={handleClose}>OK</button>
+              </div>
+            </>
+          ) : null}
+        </div>
+        <div>
+          {props.type === "dsp300" ? (
+            <>
               <img src={enroll1} alt="" />
-              
-              </> :<>
+            </>
+          ) : (
+            <>
               <img src={enroll2} alt="" />
-              </> }
-                
-            </div>
-        </section>
+            </>
+          )}
+        </div>
+      </section>
 
-
-        {/* MODAL */}
+      {/* MODAL */}
       <Modal
         isOpen={isOpen}
         onRequestClose={toggleModal}
@@ -136,25 +141,17 @@ const Enroll = (props) => {
           </button>
         </div> */}
 
-
-
-
-
-
         <div className="confirm">
-          <h4>DSP-300  Registration is yet to commence.</h4>
+          <h4>DSP-100 Registration is yet to commence.</h4>
           {/* <h4>Check back next year.</h4> */}
-          
+
           <button type="button" onClick={openModal2}>
             OK
           </button>
         </div>
-        
       </Modal>
-
-
     </div>
-  )
-}
+  );
+};
 
-export default Enroll
+export default Enroll;
